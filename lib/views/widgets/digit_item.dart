@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class DigitItem extends StatelessWidget {
   const DigitItem({
     super.key,
-    required this.text,
+    this.text = "",
   });
 
   final String text;

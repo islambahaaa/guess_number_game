@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:guess_number/views/widgets/digit_item.dart';
 import 'package:guess_number/views/widgets/num_pad.dart';
 import 'package:numpad/numpad.dart';
@@ -30,21 +31,16 @@ class _GameViewState extends State<GameView> {
         children: [
           Row(
             children: [
-              DigitItem(
-                text: num,
-              ),
-              DigitItem(
-                text: num,
-              ),
-              DigitItem(
-                text: num,
-              ),
+              DigitItem(text: num),
+              DigitItem(text: num),
+              DigitItem(text: num),
             ],
           ),
           KeyPad(
             pinController: pinController,
             onChange: (String pin) {
               num = pin;
+
               setState(() {});
             },
           ),

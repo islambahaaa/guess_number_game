@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:guess_number/views/game_view.dart';
 import 'package:guess_number/views/home_page.dart';
-import 'package:guess_number/views/test.dart';
 
 void main() {
   runApp(const MyApp());
