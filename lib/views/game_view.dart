@@ -43,14 +43,10 @@ class _GameViewState extends State<GameView> {
           ),
           KeyPad(
             pinController: pinController,
-            isPinLogin: false,
             onChange: (String pin) {
-              if (pin.length < 2) {
-                num = pin;
-                setState(() {});
-              }
+              num = pin;
+              setState(() {});
             },
-            onSubmit: (String pin) {},
           ),
         ],
       ),
