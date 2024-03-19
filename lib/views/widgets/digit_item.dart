@@ -3,8 +3,10 @@ import 'package:flutter/material.dart';
 class DigitItem extends StatelessWidget {
   const DigitItem({
     super.key,
+    required this.text,
   });
 
+  final String text;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -27,18 +29,24 @@ class DigitItem extends StatelessWidget {
               color: Colors.blue,
               width: 2,
             )),
-        child: const Center(
-          //     child: Text(
-          //   '1',
-          //   style: TextStyle(
-          //     fontSize: 26,
-          //   ),
-          // )
-          child: TextField(
-            clipBehavior: Clip.hardEdge,
-            keyboardType: TextInputType.number,
+        child: Center(
+            child: Text(
+          text,
+          style: const TextStyle(
+            fontSize: 26,
           ),
-        ),
+        )
+            // child: Padding(
+            //   padding: EdgeInsets.only(left: 20),
+            //   child: TextField(
+            //     showCursor: false,
+            //     keyboardType: TextInputType.number,
+            //     // decoration: InputDecoration(
+            //     //     border: OutlineInputBorder(
+            //     //         borderRadius: BorderRadius.all(Radius.circular(24)))),
+            //   ),
+            // ),
+            ),
       ),
     );
   }
