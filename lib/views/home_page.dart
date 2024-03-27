@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:guess_number/views/game_view.dart';
+import 'package:guess_number/views/widgets/contact_view.dart';
 import 'package:guess_number/views/widgets/custom_home_button.dart';
 
 class HomePage extends StatelessWidget {
@@ -41,7 +42,7 @@ class HomePage extends StatelessWidget {
             CustomHomeButton(
               text: 'Contact Us',
               onTap: () {
-                Navigator.pushNamed(context, GameView.id);
+                Navigator.pushNamed(context, ContactView.id);
               },
             ),
             const Spacer(
